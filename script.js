@@ -71,12 +71,14 @@ function onAddItemSubmit(e) {
 function addItemToDOM(item) {
   // Create list item
   const li = document.createElement("li");
+
   li.appendChild(document.createTextNode(item));
+
 
   const button = createButton("btn btn-sm btn-outline-danger");
   li.appendChild(button);
   li.className =
-    "list-group-item d-flex justify-content-between align-items-center";
+    "col-md-3 list-group-item d-flex justify-content-between align-items-center";
 
   itemList.appendChild(li);
 }
